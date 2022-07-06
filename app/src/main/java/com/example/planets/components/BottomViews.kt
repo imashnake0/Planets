@@ -12,16 +12,17 @@ import com.example.planets.R
 import com.example.planets.ui.theme.Orange
 
 @Composable
-fun ColumnScope.BottomViews() {
+fun BottomViews() {
     Row(
-        modifier = Modifier.padding(bottom = 32.dp).fillMaxSize().weight(1f),
+        modifier = Modifier.padding(bottom = 32.dp).fillMaxWidth(),
         verticalAlignment = Alignment.Bottom,
         horizontalArrangement = Arrangement.Center
     ) {
         FloatingActionButton(onClick = { /*TODO*/ }, backgroundColor = Orange) {
             Icon(
                 painter = painterResource(id = R.drawable.rokit_icon),
-                contentDescription = "")
+                contentDescription = "Rocket FAB"
+            )
         }
     }
 }

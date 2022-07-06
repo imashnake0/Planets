@@ -27,8 +27,9 @@ fun PICK() {
 
         Column(Modifier.fillMaxSize()) {
             PickerView()
-            BottomViews()
         }
+
+        BottomViews()
     }
 }
 
