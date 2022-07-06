@@ -36,14 +36,15 @@ fun TopViews() {
             ) {
                 Icon(
                     painter = painterResource(id = R.drawable.menu_icon),
-                    contentDescription = ""
+                    contentDescription = "Menu"
                 )
             }
         }
+
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.Center
-        ){
+        ) {
             Text(
                 text = "PLANETS",
                 fontSize = 20.sp,

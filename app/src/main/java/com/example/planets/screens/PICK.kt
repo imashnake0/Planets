@@ -13,7 +13,9 @@ import com.example.planets.components.PickerView
 import com.example.planets.components.TopViews
 import com.example.planets.ui.theme.Back
 import com.example.planets.ui.theme.PlanetsTheme
+import dev.chrisbanes.snapper.ExperimentalSnapperApi
 
+@ExperimentalSnapperApi
 @Composable
 fun PICK() {
 
@@ -30,6 +32,7 @@ fun PICK() {
     }
 }
 
+@ExperimentalSnapperApi
 @Composable
 @Preview
 fun Pre() {

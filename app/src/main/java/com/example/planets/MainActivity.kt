@@ -12,8 +12,8 @@ import com.example.planets.ui.theme.Back
 import com.example.planets.ui.theme.PlanetsTheme
 import androidx.core.view.WindowInsetsControllerCompat
 import com.example.planets.screens.PICK
+import dev.chrisbanes.snapper.ExperimentalSnapperApi
 
-//___________________Global values
 val pList = listOf(
     "MERCURY",
     "VENUS",
@@ -25,6 +25,7 @@ val pList = listOf(
     "NEPTUNE",
 )
 
+@ExperimentalSnapperApi
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,4 +52,3 @@ class MainActivity : ComponentActivity() {
         windowInsetsController.hide(WindowInsetsCompat.Type.systemBars())
     }
 }
-
